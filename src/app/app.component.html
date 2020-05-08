@@ -1,0 +1,35 @@
+<table>
+  <tr>
+    <td>
+<input id='txtfirst' [(ngModel)]='firstNumber' type='text'>
+    </td>
+    <td>
+      {{action}}
+    </td>
+    <td>
+      <input id='txtsecond' [(ngModel)]='secondNumber' type='text'>
+    </td>
+    <td>
+      =
+    </td>
+    <td>     
+      <input id='txtresult' [(ngModel)]='result' type='text'>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+<button (click) = "getResult('+')">+</button>
+    </td>
+    <td>
+      <button (click) = "getResult('-')">-</button>
+    </td>
+    <td>
+      <button (click) = "getResult('x')">*</button>
+    </td>
+    <td>
+      <button (click) = "getResult('clear')">clear</button>
+    </td>
+    <td></td>
+  </tr>
+</table>
